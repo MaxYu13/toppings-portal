@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/toppings-portal/static/css/main.a6e9cafd.chunk.css",
+    "main.js": "/toppings-portal/static/js/main.4f36a80f.chunk.js",
+    "main.js.map": "/toppings-portal/static/js/main.4f36a80f.chunk.js.map",
+    "runtime-main.js": "/toppings-portal/static/js/runtime-main.a52f0a1c.js",
+    "runtime-main.js.map": "/toppings-portal/static/js/runtime-main.a52f0a1c.js.map",
+    "static/js/2.058061c3.chunk.js": "/toppings-portal/static/js/2.058061c3.chunk.js",
+    "static/js/2.058061c3.chunk.js.map": "/toppings-portal/static/js/2.058061c3.chunk.js.map",
+    "index.html": "/toppings-portal/index.html",
+    "static/css/main.a6e9cafd.chunk.css.map": "/toppings-portal/static/css/main.a6e9cafd.chunk.css.map",
+    "static/js/2.058061c3.chunk.js.LICENSE.txt": "/toppings-portal/static/js/2.058061c3.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/toppings-portal/static/media/toppings-print-white-gradient-transparent.d5b9d08c.PNG",
+    "static/media/bubble-icon-1.59b54bba.svg": "/toppings-portal/static/media/bubble-icon-1.59b54bba.svg",
+    "static/media/bubble-icon-2.7af7e509.svg": "/toppings-portal/static/media/bubble-icon-2.7af7e509.svg",
+    "static/media/clock-icon.d3af5bbb.svg": "/toppings-portal/static/media/clock-icon.d3af5bbb.svg",
+    "static/media/dashboard-design.b466fc61.PNG": "/toppings-portal/static/media/dashboard-design.b466fc61.PNG",
+    "static/media/gray-checkmark.d0298c9b.svg": "/toppings-portal/static/media/gray-checkmark.d0298c9b.svg",
+    "static/media/location-icon.40cf1348.svg": "/toppings-portal/static/media/location-icon.40cf1348.svg",
+    "static/media/logo-white.f74b3cfc.png": "/toppings-portal/static/media/logo-white.f74b3cfc.png",
+    "static/media/phone-icon.92a2e6cb.svg": "/toppings-portal/static/media/phone-icon.92a2e6cb.svg",
+    "static/media/portal-dashboard-icon.72eba466.svg": "/toppings-portal/static/media/portal-dashboard-icon.72eba466.svg",
+    "static/media/portal-logout-icon.401bf9b0.svg": "/toppings-portal/static/media/portal-logout-icon.401bf9b0.svg",
+    "static/media/portal-menu-icon.9ea934fe.svg": "/toppings-portal/static/media/portal-menu-icon.9ea934fe.svg",
+    "static/media/portal-menu-plus-button.c31ac20a.svg": "/toppings-portal/static/media/portal-menu-plus-button.c31ac20a.svg",
+    "static/media/portal-orders-icon.337bc697.svg": "/toppings-portal/static/media/portal-orders-icon.337bc697.svg",
+    "static/media/portal-rewards-icon.6fe63e0d.svg": "/toppings-portal/static/media/portal-rewards-icon.6fe63e0d.svg",
+    "static/media/portal-settings-icon.ee0f252a.svg": "/toppings-portal/static/media/portal-settings-icon.ee0f252a.svg",
+    "static/media/portal-terms-service-icon.d30cdcaa.svg": "/toppings-portal/static/media/portal-terms-service-icon.d30cdcaa.svg",
+    "static/media/settings-design.972557d8.PNG": "/toppings-portal/static/media/settings-design.972557d8.PNG",
+    "static/media/white-checkmark.fe085373.svg": "/toppings-portal/static/media/white-checkmark.fe085373.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a52f0a1c.js",
+    "static/js/2.058061c3.chunk.js",
+    "static/css/main.a6e9cafd.chunk.css",
+    "static/js/main.4f36a80f.chunk.js"
+  ]
+}
