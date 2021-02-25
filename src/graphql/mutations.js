@@ -10924,6 +10924,7 @@ export const deleteMenuCategory = /* GraphQL */ `
     }
   }
 `;
+
 export const createMenuItem = /* GraphQL */ `
   mutation CreateMenuItem(
     $input: CreateMenuItemInput!

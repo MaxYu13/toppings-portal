@@ -1,8 +1,8 @@
 {
-  "name": "toppings-vendor",
+  "name": "toppings-portal",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://toppings-dev.github.io/toppings-dev",
+  "homepage": "https://maxyu13.github.io/toppings-portal",
   "dependencies": {
     "@aws-amplify/ui-react": "^0.2.34",
     "@testing-library/jest-dom": "^5.11.4",
