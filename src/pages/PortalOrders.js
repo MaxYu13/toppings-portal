@@ -1,18 +1,35 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+import Amplify, { Auth, API, graphqlOperation } from 'aws-amplify';
+
+import awsConfig from '../utils/awsConfig';
+import * as queries from '../graphql/queries';
+import * as mutations from '../graphql/mutations';
+import * as subscriptions from '../graphql/subscriptions'
+
 import bubbleIcon from '../assets/images/bubble-icon-2.svg';
 import whiteCheckmark from '../assets/images/white-checkmark.svg';
 import grayCheckmark from '../assets/images/gray-checkmark.svg';
+import { listOrders } from '../../../toppings-portal/src/graphql/queries';
+import { onCreateOrderItem } from '../../../toppings-portal/src/graphql/subscriptions';
+
 
 function PortalOrders(props) {
   const [selectedOrder, selectOrder] = useState(null); 
   const [orders, setOrders] = useState({
-    New: [{id: 73, deliverer: "Patrick Star", customer: "Gary", tip: 0.00, instructions: "Meow", items: [{name: "Golden Loaf", price: 2.50}, {name: "Krabby Patty", price: 2.99}]}, 
-          {id: 72, deliverer: "Plankton", customer: "Karen", tip: 2.00, instructions: "Give me the secret formula Mr. Krabs!", items: [{name: "Krabby Patty", price: 2.99}]}],
-    Preparing: [{id: 71, deliverer: "Triton", customer: "King Neptune", tip: 1.00, instructions: "Extra jelly please!", items: [{name: "Jelly Patty", price: 3.99}, {name: "Jelly Patty", price: 3.99}, {name: "Jelly Patty", price: 3.99}]}, 
-                {id: 70, deliverer: "Princess Mindy", customer: "King Neptune", tip: 0.80, instructions: "", items: [{name: "Fried Oyster Skin", price: 0.99}, {name: "Golden Loaf", price: 2.50}]}],
-    Ready: [{id: 69, deliverer: "Larry the Lobster", customer: "Mrs. Puff", tip: 1.00, instructions: "", items: [{name: "Krabby Patty", price: 2.99}, {name: "Krabby Patty", price: 2.99}, {name: "Jelly Patty", price: 3.99}]}]
+    // New: [{id: 73, deliverer: "Patrick Star", customer: "Gary", tip: 0.00, instructions: "Meow", items: [{name: "Golden Loaf", price: 2.50}, {name: "Krabby Patty", price: 2.99}]}, 
+    //       {id: 72, deliverer: "Plankton", customer: "Karen", tip: 2.00, instructions: "Give me the secret formula Mr. Krabs!", items: [{name: "Krabby Patty", price: 2.99}]}],
+    // Preparing: [{id: 71, deliverer: "Triton", customer: "King Neptune", tip: 1.00, instructions: "Extra jelly please!", items: [{name: "Jelly Patty", price: 3.99}, {name: "Jelly Patty", price: 3.99}, {name: "Jelly Patty", price: 3.99}]}, 
+    //             {id: 70, deliverer: "Princess Mindy", customer: "King Neptune", tip: 0.80, instructions: "", items: [{name: "Fried Oyster Skin", price: 0.99}, {name: "Golden Loaf", price: 2.50}]}],
+    // Ready: [{id: 69, deliverer: "Larry the Lobster", customer: "Mrs. Puff", tip: 1.00, instructions: "", items: [{name: "Krabby Patty", price: 2.99}, {name: "Krabby Patty", price: 2.99}, {name: "Jelly Patty", price: 3.99}]}]
+    New:[],
+    Preparing:[],
+    Ready:[]
   });
+  useEffect(() => {
+    getData();
+    //updateData();
+  }, []);
 
   function advanceOrder(order, currentStatus) {
     const ordersCopy = orders;
@@ -30,6 +47,220 @@ function PortalOrders(props) {
 
     setOrders({... ordersCopy});
   }
+
+
+  async function getData() {
+    console.log('test')
+    const orderList = [];
+    const response = await API.graphql(graphqlOperation(onCreateOrderItem)).subscribe({
+      next: (eventData) => {
+        //console.log(eventData)
+        let New = []
+        const myOrder = eventData.value.data.onCreateOrderItem
+        // if(myOrder.pickup === undefined || myOrder.customer === undefined || myOrder.order === undefined)
+        // {
+        //   console.log(myOrder.pickup + "pick")
+
+        //   console.log(myOrder.customer + "cust")
+        //   console.log(myOrder.order)
+        //   return
+        // }
+        
+        console.log(myOrder.itemName)
+        console.log(myOrder)
+        console.log(myOrder.customer)
+        console.log(myOrder.price_before_reward)
+        console.log(myOrder.order)
+        
+        if(myOrder.menuId === props.restaurant.id)
+        {
+          let foodItems = []
+          myOrder.order.orderItems.items.forEach(foodItem =>{
+                        let myFoodItem = {
+                          name:foodItem.itemName,
+                          price:foodItem.price_before_reward
+                        }
+                        foodItems.push(myFoodItem)
+                      })
+          let newOrder = {
+            id: myOrder.id,
+            deliverer: myOrder.order.pickup.deliverer.name,
+            customer: myOrder.order.customer.name,
+            tip: myOrder.order.tip,
+            instructions: "",
+            items: foodItems
+          }
+          console.log(newOrder.items.price)
+          console.log(newOrder)
+          New.push(newOrder)
+        }
+        New.forEach(order => {
+          setOrders(oldMenuItems => ({
+            ...oldMenuItems, New
+            
+          }));
+        });
+  }});
+    
+    // console.log(onCreateOrderItem)
+    // console.log(response)
+    
+  }
+  
+  // async function getData() {
+  //   setLoading(true);
+  //   const response = await API.graphql(graphqlOperation(customQueries.listMenuCategories, { filter: { menuId: { eq: props.restaurant.id }}}));
+  //   const menuCategoriesList = response.data.listMenuCategorys.items;
+  //   menuCategoriesList.forEach(category => {
+  //     setMenuItems(oldMenuItems => ({
+  //       ...oldMenuItems,
+  //       [category.name]: category.menuItems.items,
+  //     }));
+  //   });
+  //   setLoading(false);
+  // }
+  // function getData() {
+  //   API.graphql({ query: queries.listOrders }).then(({ data: { listOrders } }) => {
+
+  //     // let restaurantOrders = []
+  //     // //console.log(listOrders.items.length)
+  //     // let y = listOrders.items.length
+  //     // console.log(listOrders.items)
+  //     // for(var x=0;x<15;x++)
+  //     // {
+        
+  //     //   if(listOrders.items[x].restaurant.id === props.restaurant.id)
+  //     //   {
+  //     //     restaurantOrders.push(listOrders.items[x])
+  //     //   }
+  //     // }
+  //     //console.log(listOrders.items)
+  //     let actualOrders = listOrders.items.filter(item => item.restaurant != null)
+  //     //console.log(actualOrders)
+  //     let restaurantOrders = actualOrders.filter(item => item.restaurant.id == props.restaurant.id);
+  //     //console.log(listOrders)
+  //     //console.log(restaurantOrders[0].restaurant.id)
+  //     console.log(restaurantOrders)
+  //     //console.log(listOrders.items[0].restaurant.id)
+  //     //console.log(listOrders)
+  //     //console.log(orders)
+  //     //console.log("test")
+  //     // restaurantOrders.forEach(orders => {
+  //     //   API.graphql({ query: queries.listMenuItems }).then(({ data: { listMenuItems } }) => {
+  //     //     let restaurantMenuItems = listMenuItems.items.filter(item => item.menuId == props.restaurant.id);
+  //         //console.log(restaurantMenuItems)
+  //         //console.log('test')
+  //         let finalOrders = restaurantOrders.filter(item => item.orderItems.items.length !== 0)
+  //         console.log(finalOrders)
+          
+  //         let New = []
+  //         restaurantOrders.forEach(newOrder => {
+  //           let foodItems = []
+  //           newOrder.orderItems.items.forEach(foodItem =>{
+  //             let myFoodItem = {
+  //               name:foodItem.itemName,
+  //               price:foodItem.price_before_reward
+  //             }
+  //             foodItems.push(myFoodItem)
+  //           })
+  //           //console.log(foodItems)
+  //         let myOrder = {
+  //           id: newOrder.id, deliverer: newOrder.pickup.deliverer.name, customer: newOrder.customer.name, tip: newOrder.tip, instructions: "", items: foodItems
+  //         }
+  //         if(myOrder.items.length !==0 )
+  //         {
+  //           console.log("test")
+  //         New.push(myOrder)
+  //         }
+  //       }
+  //         )
+  //         //console.log(incomingOrders)
+  //         //id: 73, deliverer: "Patrick Star", customer: "Gary", tip: 0.00, instructions: "Meow", items: [{name: "Golden Loaf", price: 2.50}, {name: "Krabby Patty", price: 2.99}]}
+  //         setOrders(oldOrders => ({
+  //           ...oldOrders,
+  //           New,
+
+  //         //});
+  //         //setMenuItems(oldMenuCategories => ({
+  //           //           ...oldMenuCategories,
+  //           //           [category.name]: restaurantMenuItems
+  //           //
+  //                  }));
+  //       // }).catch((error) => {
+  //       //   console.log(error);
+  //       // }); 
+  //      //});
+  //   }).catch((error) => {
+  //     console.log(error);
+  //   });
+  // }
+  // async function updateData(){
+  //   setLoading(true);
+  //   const response = await API.graphql({subsciption: subscriptions}).then(({ data: { listOrders } }) => {
+  //       const orders = response.data.listOrders.items
+  //   },
+  //   setLoading(false)
+  // }
+
+  // async function updateData() {
+  //   console.log('test')
+  //   const response = await API.graphql({subscription:subscriptions.onCreateOrderItem}).then({data:subscriptions.onCreateOrderItem});
+  //   const orderList = response.data.onCreateOrderItem.items;
+  //   console.log(orderList)
+  //   orderList.forEach(order => {
+  //     setOrders(oldMenuItems => ({
+  //       ...oldMenuItems,
+        
+  //     }));
+  //   });
+    
+  // }
+
+  // function getData() {
+  //   API.graphql({ query: queries.listVendorRewards }).then(({ data: { listVendorRewards } }) => {
+  //     let restaurantRewards = listVendorRewards.items.filter(reward => reward.menuId == props.restaurant.id);
+  //     restaurantRewards.forEach(reward => {
+  //       API.graphql({ query: queries.listMenuItems }).then(({ data: { listMenuItems } }) => {
+  //         console.log(listMenuItems)
+  //         let restaurantMenuItem = listMenuItems.items.filter(item => item.menuId == props.restaurant.id && item.name == reward.itemName);
+  //         setRewardItems({
+  //           Rewards: [...rewardItems.Rewards, {
+  //             ...reward,
+  //             description: restaurantMenuItem[0].description
+  //           }]
+  //         });
+  //       }).catch((error) => {
+  //         console.log(error);
+  //       });
+  //     });
+  //     console.log(restaurantRewards)
+  //     setRewardItems({
+  //       Rewards: restaurantRewards
+  //     });
+  //   }).catch((error) => {
+  //     console.log(error);
+  //   });
+  // }
+
+  // function getData() {
+  //   API.graphql({ query: queries.listMenuCategorys }).then(({ data: { listMenuCategorys } }) => {
+  //     let restaurantMenuCategories = listMenuCategorys.items.filter(category => category.menuId == props.restaurant.id);
+  //     restaurantMenuCategories.forEach(category => {
+  //       let restaurantMenuItems = [];
+  //       API.graphql({ query: queries.listMenuItems }).then(({ data: { listMenuItems } }) => {
+  //         restaurantMenuItems = listMenuItems.items.filter(item => item.menuId == props.restaurant.id && item.menuCategoryName == category.name);
+  //         setMenuItems(oldMenuCategories => ({
+  //           ...oldMenuCategories,
+  //           [category.name]: restaurantMenuItems
+  //         }));
+  //       }).catch((error) => {
+  //         console.log(error);
+  //       });
+  //     });
+  //   }).catch((error) => {
+  //     console.log(error);
+  //   });
+  //}
 
   return (
     <article className="portal-orders-container">
@@ -64,7 +295,7 @@ function PortalOrders(props) {
               <div>
                 <header>
                   <span className="subheading">Items <br />
-                    <span className="blue-subheading">{orders.New.length + orders.Preparing.length + orders.Ready.length}</span>
+                    <span className="blue-subheading">{selectedOrder.items.length}</span>
                   </span>
                   
                   <span className="subheading">Deliverer <br />
@@ -97,7 +328,7 @@ function PortalOrders(props) {
                     {selectedOrder.items.map((item => 
                       <div key={Math.random()} className="order-item">
                         <span className="order-item-name">{item.name}</span>
-                        <span className="order-item-price">${item.price.toFixed(2)}</span>
+                        <span className="order-item-price">{item.price}</span>
                       </div>
                     ))}
                     <br />
@@ -108,7 +339,7 @@ function PortalOrders(props) {
 
                     <div className="order-tax-tip">
                       <span className="order-item-name">Tip</span>
-                      <span className="order-item-price">${selectedOrder.tip.toFixed(2)}</span>
+                       <span className="order-item-price">${selectedOrder.tip}</span> {/*add back in to fixed */}
                     </div>
                     <br />
                     <div className="order-total">
@@ -120,7 +351,7 @@ function PortalOrders(props) {
                     <hr />
                     <span className="subheading">Payment Confirmed <img className="checkmark" src={grayCheckmark} /></span>
                     <hr />
-                    
+            
                     <div className="order-instructions">
                       <span className="heading">Special Instructions</span>
                       <hr className="short" />
@@ -137,7 +368,7 @@ function PortalOrders(props) {
                     : ""}
                   </div>
                 </div>
-              </div>
+                </div>
             : ""}
           </div>
         </div>
