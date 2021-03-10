@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/toppings-portal/static/css/main.a6e9cafd.chunk.css",
-    "main.js": "/toppings-portal/static/js/main.4f36a80f.chunk.js",
-    "main.js.map": "/toppings-portal/static/js/main.4f36a80f.chunk.js.map",
+    "main.js": "/toppings-portal/static/js/main.35d7fbc9.chunk.js",
+    "main.js.map": "/toppings-portal/static/js/main.35d7fbc9.chunk.js.map",
     "runtime-main.js": "/toppings-portal/static/js/runtime-main.a52f0a1c.js",
     "runtime-main.js.map": "/toppings-portal/static/js/runtime-main.a52f0a1c.js.map",
-    "static/js/2.058061c3.chunk.js": "/toppings-portal/static/js/2.058061c3.chunk.js",
-    "static/js/2.058061c3.chunk.js.map": "/toppings-portal/static/js/2.058061c3.chunk.js.map",
+    "static/js/2.b9bc18bc.chunk.js": "/toppings-portal/static/js/2.b9bc18bc.chunk.js",
+    "static/js/2.b9bc18bc.chunk.js.map": "/toppings-portal/static/js/2.b9bc18bc.chunk.js.map",
     "index.html": "/toppings-portal/index.html",
     "static/css/main.a6e9cafd.chunk.css.map": "/toppings-portal/static/css/main.a6e9cafd.chunk.css.map",
-    "static/js/2.058061c3.chunk.js.LICENSE.txt": "/toppings-portal/static/js/2.058061c3.chunk.js.LICENSE.txt",
+    "static/js/2.b9bc18bc.chunk.js.LICENSE.txt": "/toppings-portal/static/js/2.b9bc18bc.chunk.js.LICENSE.txt",
     "static/media/App.css": "/toppings-portal/static/media/toppings-print-white-gradient-transparent.d5b9d08c.PNG",
     "static/media/bubble-icon-1.59b54bba.svg": "/toppings-portal/static/media/bubble-icon-1.59b54bba.svg",
     "static/media/bubble-icon-2.7af7e509.svg": "/toppings-portal/static/media/bubble-icon-2.7af7e509.svg",
@@ -32,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a52f0a1c.js",
-    "static/js/2.058061c3.chunk.js",
+    "static/js/2.b9bc18bc.chunk.js",
     "static/css/main.a6e9cafd.chunk.css",
-    "static/js/main.4f36a80f.chunk.js"
+    "static/js/main.35d7fbc9.chunk.js"
   ]
 }
