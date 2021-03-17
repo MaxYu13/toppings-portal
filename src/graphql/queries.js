@@ -105,6 +105,7 @@ export const getUniversity = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -173,6 +174,7 @@ export const listUniversitys = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -233,6 +235,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -283,6 +286,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -318,6 +322,14 @@ export const getUser = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -367,6 +379,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -406,6 +419,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -455,6 +469,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -494,6 +509,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -544,6 +560,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -583,6 +600,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -632,6 +650,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -707,6 +726,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -746,6 +766,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -809,6 +830,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -848,6 +870,7 @@ export const getUser = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -858,6 +881,7 @@ export const getUser = /* GraphQL */ `
         nextToken
       }
       deviceToken
+      platform
       createdAt
       updatedAt
     }
@@ -894,6 +918,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -914,6 +939,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -931,6 +957,14 @@ export const listUsers = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -950,6 +984,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -959,6 +994,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -978,6 +1014,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -987,6 +1024,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1007,6 +1045,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1016,6 +1055,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1035,6 +1075,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1068,6 +1109,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1077,6 +1119,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1104,6 +1147,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1113,6 +1157,7 @@ export const listUsers = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1123,6 +1168,7 @@ export const listUsers = /* GraphQL */ `
           nextToken
         }
         deviceToken
+        platform
         createdAt
         updatedAt
       }
@@ -1175,6 +1221,7 @@ export const getGroup = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -1250,6 +1297,7 @@ export const getGroup = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -1289,6 +1337,7 @@ export const getGroup = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -1323,6 +1372,7 @@ export const listGroups = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1356,6 +1406,7 @@ export const listGroups = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1365,6 +1416,7 @@ export const listGroups = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1402,6 +1454,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1422,6 +1475,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1439,6 +1493,14 @@ export const getGroupMembership = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -1458,6 +1520,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1467,6 +1530,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1486,6 +1550,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1495,6 +1560,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1515,6 +1581,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1524,6 +1591,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1543,6 +1611,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1576,6 +1645,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1585,6 +1655,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1612,6 +1683,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1621,6 +1693,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1631,6 +1704,7 @@ export const getGroupMembership = /* GraphQL */ `
           nextToken
         }
         deviceToken
+        platform
         createdAt
         updatedAt
       }
@@ -1648,6 +1722,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1681,6 +1756,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1690,6 +1766,7 @@ export const getGroupMembership = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1816,6 +1893,7 @@ export const listGroupMemberships = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -1877,6 +1955,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1897,6 +1976,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1914,6 +1994,14 @@ export const getFriendship = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -1933,6 +2021,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1942,6 +2031,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1961,6 +2051,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1970,6 +2061,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1990,6 +2082,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -1999,6 +2092,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2018,6 +2112,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2051,6 +2146,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2060,6 +2156,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2087,6 +2184,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2096,6 +2194,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2106,6 +2205,7 @@ export const getFriendship = /* GraphQL */ `
           nextToken
         }
         deviceToken
+        platform
         createdAt
         updatedAt
       }
@@ -2125,6 +2225,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2145,6 +2246,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2162,6 +2264,14 @@ export const getFriendship = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -2181,6 +2291,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2190,6 +2301,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2209,6 +2321,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2218,6 +2331,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2238,6 +2352,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2247,6 +2362,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2266,6 +2382,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2299,6 +2416,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2308,6 +2426,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2335,6 +2454,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2344,6 +2464,7 @@ export const getFriendship = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2354,6 +2475,7 @@ export const getFriendship = /* GraphQL */ `
           nextToken
         }
         deviceToken
+        platform
         createdAt
         updatedAt
       }
@@ -2468,6 +2590,7 @@ export const listFriendships = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -2566,6 +2689,7 @@ export const listFriendships = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -2598,6 +2722,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2618,6 +2743,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2635,6 +2761,14 @@ export const getFriendRequest = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -2654,6 +2788,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2663,6 +2798,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2682,6 +2818,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2691,6 +2828,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2711,6 +2849,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2720,6 +2859,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2739,6 +2879,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2772,6 +2913,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2781,6 +2923,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2808,6 +2951,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2817,6 +2961,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2827,6 +2972,7 @@ export const getFriendRequest = /* GraphQL */ `
           nextToken
         }
         deviceToken
+        platform
         createdAt
         updatedAt
       }
@@ -2846,6 +2992,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2866,6 +3013,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2883,6 +3031,14 @@ export const getFriendRequest = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -2902,6 +3058,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2911,6 +3068,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2930,6 +3088,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2939,6 +3098,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2959,6 +3119,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2968,6 +3129,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -2987,6 +3149,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3020,6 +3183,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3029,6 +3193,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3056,6 +3221,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3065,6 +3231,7 @@ export const getFriendRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3075,6 +3242,7 @@ export const getFriendRequest = /* GraphQL */ `
           nextToken
         }
         deviceToken
+        platform
         createdAt
         updatedAt
       }
@@ -3190,6 +3358,7 @@ export const listFriendRequests = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -3288,6 +3457,7 @@ export const listFriendRequests = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -3319,6 +3489,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3352,6 +3523,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3361,6 +3533,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3389,6 +3562,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3409,6 +3583,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3426,6 +3601,14 @@ export const getGroupRequest = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -3445,6 +3628,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3454,6 +3638,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3473,6 +3658,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3482,6 +3668,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3502,6 +3689,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3511,6 +3699,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3530,6 +3719,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3563,6 +3753,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3572,6 +3763,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3599,6 +3791,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3608,6 +3801,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3618,6 +3812,7 @@ export const getGroupRequest = /* GraphQL */ `
           nextToken
         }
         deviceToken
+        platform
         createdAt
         updatedAt
       }
@@ -3637,6 +3832,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3657,6 +3853,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3674,6 +3871,14 @@ export const getGroupRequest = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -3693,6 +3898,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3702,6 +3908,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3721,6 +3928,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3730,6 +3938,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3750,6 +3959,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3759,6 +3969,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3778,6 +3989,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3811,6 +4023,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3820,6 +4033,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3847,6 +4061,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3856,6 +4071,7 @@ export const getGroupRequest = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -3866,6 +4082,7 @@ export const getGroupRequest = /* GraphQL */ `
           nextToken
         }
         deviceToken
+        platform
         createdAt
         updatedAt
       }
@@ -4010,6 +4227,7 @@ export const listGroupRequests = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -4108,6 +4326,7 @@ export const listGroupRequests = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -4159,6 +4378,14 @@ export const getRestaurant = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -4216,6 +4443,14 @@ export const getRestaurant = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -4282,6 +4517,14 @@ export const getRestaurant = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -4347,6 +4590,14 @@ export const getRestaurant = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -4380,6 +4631,14 @@ export const getRestaurant = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4431,6 +4690,14 @@ export const getRestaurant = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -4486,6 +4753,14 @@ export const getRestaurant = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -4506,6 +4781,14 @@ export const getRestaurant = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4532,6 +4815,14 @@ export const getRestaurant = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4557,6 +4848,14 @@ export const getRestaurant = /* GraphQL */ `
       long
       phone_number
       email
+      restaurantOwnerName
+      sundayHours
+      mondayHours
+      tuesdayHours
+      wednesdayHours
+      thursdayHours
+      fridayHours
+      saturdayHours
       createdAt
       updatedAt
     }
@@ -4589,6 +4888,14 @@ export const listRestaurants = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4618,6 +4925,14 @@ export const listRestaurants = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4650,6 +4965,14 @@ export const listRestaurants = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4680,6 +5003,14 @@ export const listRestaurants = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4715,6 +5046,14 @@ export const listRestaurants = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4744,6 +5083,14 @@ export const listRestaurants = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4776,6 +5123,14 @@ export const listRestaurants = /* GraphQL */ `
         long
         phone_number
         email
+        restaurantOwnerName
+        sundayHours
+        mondayHours
+        tuesdayHours
+        wednesdayHours
+        thursdayHours
+        fridayHours
+        saturdayHours
         createdAt
         updatedAt
       }
@@ -4809,6 +5164,14 @@ export const getMenuCategory = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4838,6 +5201,14 @@ export const getMenuCategory = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4870,6 +5241,14 @@ export const getMenuCategory = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4900,6 +5279,14 @@ export const getMenuCategory = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4935,6 +5322,14 @@ export const getMenuCategory = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4964,6 +5359,14 @@ export const getMenuCategory = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -4996,6 +5399,14 @@ export const getMenuCategory = /* GraphQL */ `
         long
         phone_number
         email
+        restaurantOwnerName
+        sundayHours
+        mondayHours
+        tuesdayHours
+        wednesdayHours
+        thursdayHours
+        fridayHours
+        saturdayHours
         createdAt
         updatedAt
       }
@@ -5035,6 +5446,14 @@ export const getMenuCategory = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -5160,6 +5579,14 @@ export const listMenuCategorys = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -5181,6 +5608,14 @@ export const listMenuCategorys = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5231,6 +5666,14 @@ export const getMenuItem = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5260,6 +5703,14 @@ export const getMenuItem = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5292,6 +5743,14 @@ export const getMenuItem = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5322,6 +5781,14 @@ export const getMenuItem = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5357,6 +5824,14 @@ export const getMenuItem = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5386,6 +5861,14 @@ export const getMenuItem = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5418,6 +5901,14 @@ export const getMenuItem = /* GraphQL */ `
         long
         phone_number
         email
+        restaurantOwnerName
+        sundayHours
+        mondayHours
+        tuesdayHours
+        wednesdayHours
+        thursdayHours
+        fridayHours
+        saturdayHours
         createdAt
         updatedAt
       }
@@ -5457,6 +5948,14 @@ export const getMenuItem = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -5513,6 +6012,14 @@ export const getMenuItem = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -5546,6 +6053,14 @@ export const getMenuItem = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5658,6 +6173,14 @@ export const listMenuItems = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -5679,6 +6202,14 @@ export const listMenuItems = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5707,6 +6238,14 @@ export const listMenuItems = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5759,6 +6298,14 @@ export const getFoodOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5788,6 +6335,14 @@ export const getFoodOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5820,6 +6375,14 @@ export const getFoodOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5850,6 +6413,14 @@ export const getFoodOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5885,6 +6456,14 @@ export const getFoodOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5914,6 +6493,14 @@ export const getFoodOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -5946,6 +6533,14 @@ export const getFoodOption = /* GraphQL */ `
         long
         phone_number
         email
+        restaurantOwnerName
+        sundayHours
+        mondayHours
+        tuesdayHours
+        wednesdayHours
+        thursdayHours
+        fridayHours
+        saturdayHours
         createdAt
         updatedAt
       }
@@ -5983,6 +6578,14 @@ export const getFoodOption = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -6016,6 +6619,14 @@ export const getFoodOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6068,6 +6679,14 @@ export const getFoodOption = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -6088,6 +6707,14 @@ export const getFoodOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6114,6 +6741,14 @@ export const getFoodOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6232,6 +6867,14 @@ export const listFoodOptions = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -6251,6 +6894,14 @@ export const listFoodOptions = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6287,6 +6938,14 @@ export const listFoodOptions = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6342,6 +7001,14 @@ export const getItemOptionCatJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6371,6 +7038,14 @@ export const getItemOptionCatJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6403,6 +7078,14 @@ export const getItemOptionCatJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6433,6 +7116,14 @@ export const getItemOptionCatJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6468,6 +7159,14 @@ export const getItemOptionCatJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6497,6 +7196,14 @@ export const getItemOptionCatJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6529,6 +7236,14 @@ export const getItemOptionCatJoin = /* GraphQL */ `
         long
         phone_number
         email
+        restaurantOwnerName
+        sundayHours
+        mondayHours
+        tuesdayHours
+        wednesdayHours
+        thursdayHours
+        fridayHours
+        saturdayHours
         createdAt
         updatedAt
       }
@@ -6570,6 +7285,14 @@ export const getItemOptionCatJoin = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -6682,6 +7405,14 @@ export const getItemOptionCatJoin = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -6701,6 +7432,14 @@ export const getItemOptionCatJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6737,6 +7476,14 @@ export const getItemOptionCatJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6860,6 +7607,14 @@ export const listItemOptionCatJoins = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -6883,6 +7638,14 @@ export const listItemOptionCatJoins = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -6932,6 +7695,14 @@ export const listItemOptionCatJoins = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -6993,6 +7764,14 @@ export const getOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7022,6 +7801,14 @@ export const getOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7054,6 +7841,14 @@ export const getOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7084,6 +7879,14 @@ export const getOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7119,6 +7922,14 @@ export const getOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7148,6 +7959,14 @@ export const getOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7180,6 +7999,14 @@ export const getOption = /* GraphQL */ `
         long
         phone_number
         email
+        restaurantOwnerName
+        sundayHours
+        mondayHours
+        tuesdayHours
+        wednesdayHours
+        thursdayHours
+        fridayHours
+        saturdayHours
         createdAt
         updatedAt
       }
@@ -7219,6 +8046,14 @@ export const getOption = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -7239,6 +8074,14 @@ export const getOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7265,6 +8108,14 @@ export const getOption = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7382,6 +8233,14 @@ export const listOptions = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -7403,6 +8262,14 @@ export const listOptions = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7458,6 +8325,14 @@ export const getItemOptionOptionJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7487,6 +8362,14 @@ export const getItemOptionOptionJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7519,6 +8402,14 @@ export const getItemOptionOptionJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7549,6 +8440,14 @@ export const getItemOptionOptionJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7584,6 +8483,14 @@ export const getItemOptionOptionJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7613,6 +8520,14 @@ export const getItemOptionOptionJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7645,6 +8560,14 @@ export const getItemOptionOptionJoin = /* GraphQL */ `
         long
         phone_number
         email
+        restaurantOwnerName
+        sundayHours
+        mondayHours
+        tuesdayHours
+        wednesdayHours
+        thursdayHours
+        fridayHours
+        saturdayHours
         createdAt
         updatedAt
       }
@@ -7730,6 +8653,14 @@ export const getItemOptionOptionJoin = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -7749,6 +8680,14 @@ export const getItemOptionOptionJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7785,6 +8724,14 @@ export const getItemOptionOptionJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -7890,6 +8837,14 @@ export const getItemOptionOptionJoin = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -7911,6 +8866,14 @@ export const getItemOptionOptionJoin = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -8033,6 +8996,14 @@ export const listItemOptionOptionJoins = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -8071,6 +9042,14 @@ export const listItemOptionOptionJoins = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -8132,6 +9111,14 @@ export const listItemOptionOptionJoins = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -8178,6 +9165,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8198,6 +9186,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8215,6 +9204,14 @@ export const getPickup = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -8234,6 +9231,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8243,6 +9241,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8262,6 +9261,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8271,6 +9271,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8291,6 +9292,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8300,6 +9302,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8319,6 +9322,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8352,6 +9356,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8361,6 +9366,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8388,6 +9394,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8397,6 +9404,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8407,6 +9415,7 @@ export const getPickup = /* GraphQL */ `
           nextToken
         }
         deviceToken
+        platform
         createdAt
         updatedAt
       }
@@ -8443,6 +9452,14 @@ export const getPickup = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -8488,6 +9505,7 @@ export const getPickup = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -8524,6 +9542,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8539,6 +9558,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8550,9 +9570,39 @@ export const getPickup = /* GraphQL */ `
             }
             transportation_type
             apiResponse
+            menuId
+            restaurant {
+              id
+              name
+              description
+              address
+              zip_code
+              city
+              state
+              lat
+              long
+              phone_number
+              email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
+              createdAt
+              updatedAt
+            }
+            closed
+            windowEndTime
+            windowClosed
             createdAt
             updatedAt
           }
+          status
+          closed
+          isPaid
           createdAt
           updatedAt
         }
@@ -8577,6 +9627,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8597,6 +9648,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8614,6 +9666,14 @@ export const getPickup = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -8633,6 +9693,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8642,6 +9703,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8661,6 +9723,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8670,6 +9733,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8690,6 +9754,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8699,6 +9764,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8718,6 +9784,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8751,6 +9818,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8760,6 +9828,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8787,6 +9856,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8796,6 +9866,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8806,6 +9877,7 @@ export const getPickup = /* GraphQL */ `
           nextToken
         }
         deviceToken
+        platform
         createdAt
         updatedAt
       }
@@ -8822,6 +9894,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8855,6 +9928,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8864,6 +9938,7 @@ export const getPickup = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -8878,6 +9953,276 @@ export const getPickup = /* GraphQL */ `
       }
       transportation_type
       apiResponse
+      menuId
+      restaurant {
+        id
+        name
+        menuCategories {
+          items {
+            id
+            name
+            menuId
+            restaurant {
+              id
+              name
+              description
+              address
+              zip_code
+              city
+              state
+              lat
+              long
+              phone_number
+              email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
+              createdAt
+              updatedAt
+            }
+            menuItems {
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        menuItems {
+          items {
+            id
+            name
+            description
+            menuId
+            restaurant {
+              id
+              name
+              description
+              address
+              zip_code
+              city
+              state
+              lat
+              long
+              phone_number
+              email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
+              createdAt
+              updatedAt
+            }
+            menuCategoryName
+            menuCategory {
+              nextToken
+            }
+            price
+            options {
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        foodOptions {
+          items {
+            name
+            menuId
+            restaurant {
+              id
+              name
+              description
+              address
+              zip_code
+              city
+              state
+              lat
+              long
+              phone_number
+              email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
+              createdAt
+              updatedAt
+            }
+            menuItem {
+              nextToken
+            }
+            options {
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        joinedItemsOptions {
+          items {
+            id
+            menuId
+            restaurant {
+              id
+              name
+              description
+              address
+              zip_code
+              city
+              state
+              lat
+              long
+              phone_number
+              email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
+              createdAt
+              updatedAt
+            }
+            foodOptionName
+            menuItemName
+            menuItem {
+              nextToken
+            }
+            optionCat {
+              name
+              menuId
+              createdAt
+              updatedAt
+            }
+            numchoices
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        options {
+          items {
+            menuId
+            restaurant {
+              id
+              name
+              description
+              address
+              zip_code
+              city
+              state
+              lat
+              long
+              phone_number
+              email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
+              createdAt
+              updatedAt
+            }
+            name
+            price
+            foodoption {
+              nextToken
+            }
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        joinedItemOptionsOptions {
+          items {
+            id
+            menuId
+            restaurant {
+              id
+              name
+              description
+              address
+              zip_code
+              city
+              state
+              lat
+              long
+              phone_number
+              email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
+              createdAt
+              updatedAt
+            }
+            optionName
+            foodOptionName
+            foodOption {
+              name
+              menuId
+              createdAt
+              updatedAt
+            }
+            option {
+              menuId
+              name
+              price
+              createdAt
+              updatedAt
+            }
+            createdAt
+            updatedAt
+          }
+          nextToken
+        }
+        description
+        address
+        zip_code
+        city
+        state
+        lat
+        long
+        phone_number
+        email
+        restaurantOwnerName
+        sundayHours
+        mondayHours
+        tuesdayHours
+        wednesdayHours
+        thursdayHours
+        fridayHours
+        saturdayHours
+        createdAt
+        updatedAt
+      }
+      closed
+      windowEndTime
+      windowClosed
       createdAt
       updatedAt
     }
@@ -8987,6 +10332,7 @@ export const listPickups = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -9005,6 +10351,14 @@ export const listPickups = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -9020,6 +10374,7 @@ export const listPickups = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9042,9 +10397,16 @@ export const listPickups = /* GraphQL */ `
               expdate
               transportation_type
               apiResponse
+              menuId
+              closed
+              windowEndTime
+              windowClosed
               createdAt
               updatedAt
             }
+            status
+            closed
+            isPaid
             createdAt
             updatedAt
           }
@@ -9148,6 +10510,7 @@ export const listPickups = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -9181,6 +10544,98 @@ export const listPickups = /* GraphQL */ `
         }
         transportation_type
         apiResponse
+        menuId
+        restaurant {
+          id
+          name
+          menuCategories {
+            items {
+              id
+              name
+              menuId
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          menuItems {
+            items {
+              id
+              name
+              description
+              menuId
+              menuCategoryName
+              price
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          foodOptions {
+            items {
+              name
+              menuId
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          joinedItemsOptions {
+            items {
+              id
+              menuId
+              foodOptionName
+              menuItemName
+              numchoices
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          options {
+            items {
+              menuId
+              name
+              price
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          joinedItemOptionsOptions {
+            items {
+              id
+              menuId
+              optionName
+              foodOptionName
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          description
+          address
+          zip_code
+          city
+          state
+          lat
+          long
+          phone_number
+          email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
+          createdAt
+          updatedAt
+        }
+        closed
+        windowEndTime
+        windowClosed
         createdAt
         updatedAt
       }
@@ -9212,6 +10667,14 @@ export const getOrder = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -9241,6 +10704,14 @@ export const getOrder = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -9273,6 +10744,14 @@ export const getOrder = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -9303,6 +10782,14 @@ export const getOrder = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -9338,6 +10825,14 @@ export const getOrder = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -9367,6 +10862,14 @@ export const getOrder = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -9399,6 +10902,14 @@ export const getOrder = /* GraphQL */ `
         long
         phone_number
         email
+        restaurantOwnerName
+        sundayHours
+        mondayHours
+        tuesdayHours
+        wednesdayHours
+        thursdayHours
+        fridayHours
+        saturdayHours
         createdAt
         updatedAt
       }
@@ -9424,6 +10935,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9444,6 +10956,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9461,6 +10974,14 @@ export const getOrder = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -9480,6 +11001,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9489,6 +11011,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9508,6 +11031,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9517,6 +11041,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9537,6 +11062,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9546,6 +11072,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9565,6 +11092,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9598,6 +11126,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9607,6 +11136,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9634,6 +11164,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9643,6 +11174,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9653,6 +11185,7 @@ export const getOrder = /* GraphQL */ `
           nextToken
         }
         deviceToken
+        platform
         createdAt
         updatedAt
       }
@@ -9677,6 +11210,14 @@ export const getOrder = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -9692,6 +11233,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9714,9 +11256,16 @@ export const getOrder = /* GraphQL */ `
               expdate
               transportation_type
               apiResponse
+              menuId
+              closed
+              windowEndTime
+              windowClosed
               createdAt
               updatedAt
             }
+            status
+            closed
+            isPaid
             createdAt
             updatedAt
           }
@@ -9746,6 +11295,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9763,6 +11313,14 @@ export const getOrder = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -9880,6 +11438,7 @@ export const getOrder = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -9898,6 +11457,14 @@ export const getOrder = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -9913,6 +11480,7 @@ export const getOrder = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -9935,9 +11503,16 @@ export const getOrder = /* GraphQL */ `
               expdate
               transportation_type
               apiResponse
+              menuId
+              closed
+              windowEndTime
+              windowClosed
               createdAt
               updatedAt
             }
+            status
+            closed
+            isPaid
             createdAt
             updatedAt
           }
@@ -10041,6 +11616,7 @@ export const getOrder = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -10074,9 +11650,104 @@ export const getOrder = /* GraphQL */ `
         }
         transportation_type
         apiResponse
+        menuId
+        restaurant {
+          id
+          name
+          menuCategories {
+            items {
+              id
+              name
+              menuId
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          menuItems {
+            items {
+              id
+              name
+              description
+              menuId
+              menuCategoryName
+              price
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          foodOptions {
+            items {
+              name
+              menuId
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          joinedItemsOptions {
+            items {
+              id
+              menuId
+              foodOptionName
+              menuItemName
+              numchoices
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          options {
+            items {
+              menuId
+              name
+              price
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          joinedItemOptionsOptions {
+            items {
+              id
+              menuId
+              optionName
+              foodOptionName
+              createdAt
+              updatedAt
+            }
+            nextToken
+          }
+          description
+          address
+          zip_code
+          city
+          state
+          lat
+          long
+          phone_number
+          email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
+          createdAt
+          updatedAt
+        }
+        closed
+        windowEndTime
+        windowClosed
         createdAt
         updatedAt
       }
+      status
+      closed
+      isPaid
       createdAt
       updatedAt
     }
@@ -10168,6 +11839,14 @@ export const listOrders = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -10272,6 +11951,7 @@ export const listOrders = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -10299,6 +11979,9 @@ export const listOrders = /* GraphQL */ `
               tip
               grandTotal
               pickupId
+              status
+              closed
+              isPaid
               createdAt
               updatedAt
             }
@@ -10369,6 +12052,7 @@ export const listOrders = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -10390,6 +12074,9 @@ export const listOrders = /* GraphQL */ `
               tip
               grandTotal
               pickupId
+              status
+              closed
+              isPaid
               createdAt
               updatedAt
             }
@@ -10434,6 +12121,7 @@ export const listOrders = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -10451,9 +12139,57 @@ export const listOrders = /* GraphQL */ `
           }
           transportation_type
           apiResponse
+          menuId
+          restaurant {
+            id
+            name
+            menuCategories {
+              nextToken
+            }
+            menuItems {
+              nextToken
+            }
+            foodOptions {
+              nextToken
+            }
+            joinedItemsOptions {
+              nextToken
+            }
+            options {
+              nextToken
+            }
+            joinedItemOptionsOptions {
+              nextToken
+            }
+            description
+            address
+            zip_code
+            city
+            state
+            lat
+            long
+            phone_number
+            email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
+            createdAt
+            updatedAt
+          }
+          closed
+          windowEndTime
+          windowClosed
           createdAt
           updatedAt
         }
+        status
+        closed
+        isPaid
         createdAt
         updatedAt
       }
@@ -10482,6 +12218,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10502,6 +12239,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10519,6 +12257,14 @@ export const getReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -10538,6 +12284,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10547,6 +12294,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10566,6 +12314,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10575,6 +12324,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10595,6 +12345,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10604,6 +12355,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10623,6 +12375,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10656,6 +12409,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10665,6 +12419,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10692,6 +12447,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10701,6 +12457,7 @@ export const getReward = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -10711,6 +12468,7 @@ export const getReward = /* GraphQL */ `
           nextToken
         }
         deviceToken
+        platform
         createdAt
         updatedAt
       }
@@ -10736,6 +12494,14 @@ export const getReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -10765,6 +12531,14 @@ export const getReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -10797,6 +12571,14 @@ export const getReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -10827,6 +12609,14 @@ export const getReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -10862,6 +12652,14 @@ export const getReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -10891,6 +12689,14 @@ export const getReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -10923,6 +12729,14 @@ export const getReward = /* GraphQL */ `
         long
         phone_number
         email
+        restaurantOwnerName
+        sundayHours
+        mondayHours
+        tuesdayHours
+        wednesdayHours
+        thursdayHours
+        fridayHours
+        saturdayHours
         createdAt
         updatedAt
       }
@@ -11036,6 +12850,7 @@ export const listRewards = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -11118,6 +12933,14 @@ export const listRewards = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -11159,6 +12982,14 @@ export const getVendorReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -11188,6 +13019,14 @@ export const getVendorReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -11220,6 +13059,14 @@ export const getVendorReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -11250,6 +13097,14 @@ export const getVendorReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -11285,6 +13140,14 @@ export const getVendorReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -11314,6 +13177,14 @@ export const getVendorReward = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -11346,9 +13217,18 @@ export const getVendorReward = /* GraphQL */ `
         long
         phone_number
         email
+        restaurantOwnerName
+        sundayHours
+        mondayHours
+        tuesdayHours
+        wednesdayHours
+        thursdayHours
+        fridayHours
+        saturdayHours
         createdAt
         updatedAt
       }
+      description
       createdAt
       updatedAt
     }
@@ -11447,9 +13327,18 @@ export const listVendorRewards = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
+        description
         createdAt
         updatedAt
       }
@@ -11543,6 +13432,14 @@ export const getOrderItem = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -11647,6 +13544,7 @@ export const getOrderItem = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -11674,6 +13572,9 @@ export const getOrderItem = /* GraphQL */ `
               tip
               grandTotal
               pickupId
+              status
+              closed
+              isPaid
               createdAt
               updatedAt
             }
@@ -11744,6 +13645,7 @@ export const getOrderItem = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -11765,6 +13667,9 @@ export const getOrderItem = /* GraphQL */ `
               tip
               grandTotal
               pickupId
+              status
+              closed
+              isPaid
               createdAt
               updatedAt
             }
@@ -11809,6 +13714,7 @@ export const getOrderItem = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -11826,9 +13732,57 @@ export const getOrderItem = /* GraphQL */ `
           }
           transportation_type
           apiResponse
+          menuId
+          restaurant {
+            id
+            name
+            menuCategories {
+              nextToken
+            }
+            menuItems {
+              nextToken
+            }
+            foodOptions {
+              nextToken
+            }
+            joinedItemsOptions {
+              nextToken
+            }
+            options {
+              nextToken
+            }
+            joinedItemOptionsOptions {
+              nextToken
+            }
+            description
+            address
+            zip_code
+            city
+            state
+            lat
+            long
+            phone_number
+            email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
+            createdAt
+            updatedAt
+          }
+          closed
+          windowEndTime
+          windowClosed
           createdAt
           updatedAt
         }
+        status
+        closed
+        isPaid
         createdAt
         updatedAt
       }
@@ -11868,6 +13822,14 @@ export const getOrderItem = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -12002,6 +13964,7 @@ export const getOrderItem = /* GraphQL */ `
             nextToken
           }
           deviceToken
+          platform
           createdAt
           updatedAt
         }
@@ -12084,6 +14047,14 @@ export const getOrderItem = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -12140,6 +14111,14 @@ export const listOrderItems = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -12185,6 +14164,7 @@ export const listOrderItems = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -12221,6 +14201,7 @@ export const listOrderItems = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -12236,6 +14217,7 @@ export const listOrderItems = /* GraphQL */ `
               phone_number
               name
               deviceToken
+              platform
               createdAt
               updatedAt
             }
@@ -12247,9 +14229,39 @@ export const listOrderItems = /* GraphQL */ `
             }
             transportation_type
             apiResponse
+            menuId
+            restaurant {
+              id
+              name
+              description
+              address
+              zip_code
+              city
+              state
+              lat
+              long
+              phone_number
+              email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
+              createdAt
+              updatedAt
+            }
+            closed
+            windowEndTime
+            windowClosed
             createdAt
             updatedAt
           }
+          status
+          closed
+          isPaid
           createdAt
           updatedAt
         }
@@ -12271,6 +14283,14 @@ export const listOrderItems = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -12330,6 +14350,7 @@ export const listOrderItems = /* GraphQL */ `
               nextToken
             }
             deviceToken
+            platform
             createdAt
             updatedAt
           }
@@ -12365,6 +14386,14 @@ export const listOrderItems = /* GraphQL */ `
             long
             phone_number
             email
+            restaurantOwnerName
+            sundayHours
+            mondayHours
+            tuesdayHours
+            wednesdayHours
+            thursdayHours
+            fridayHours
+            saturdayHours
             createdAt
             updatedAt
           }
@@ -12475,6 +14504,14 @@ export const categoriesByMenu = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -12496,6 +14533,14 @@ export const categoriesByMenu = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -12618,6 +14663,14 @@ export const itemsByCategories = /* GraphQL */ `
           long
           phone_number
           email
+          restaurantOwnerName
+          sundayHours
+          mondayHours
+          tuesdayHours
+          wednesdayHours
+          thursdayHours
+          fridayHours
+          saturdayHours
           createdAt
           updatedAt
         }
@@ -12639,6 +14692,14 @@ export const itemsByCategories = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }
@@ -12667,6 +14728,14 @@ export const itemsByCategories = /* GraphQL */ `
               long
               phone_number
               email
+              restaurantOwnerName
+              sundayHours
+              mondayHours
+              tuesdayHours
+              wednesdayHours
+              thursdayHours
+              fridayHours
+              saturdayHours
               createdAt
               updatedAt
             }

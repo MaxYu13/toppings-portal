@@ -23,18 +23,6 @@ import rewardsIcon from '../assets/images/portal-rewards-icon.svg';
 import settingsIcon from '../assets/images/portal-settings-icon.svg';
 import logoutIcon from '../assets/images/portal-logout-icon.svg';
 
-/*
-  PRIORITY LIST:
-  Orders and Terms by Wednesday
-  Rewards by Next Week
-  Dashboard and Menu Later
-
-  DEV STUFF:
-  Websockets?
-  Hosting?
-  Database Schema?
-*/
-
 Amplify.configure(awsConfig);
 
 function Portal(props) {
@@ -47,19 +35,12 @@ function Portal(props) {
     getData();
   }, []);
 
-  function getData() {
-    console.log("GET DATA")
-    API.graphql({ query: queries.listRestaurants }).then(({ data: { listRestaurants } }) => {
-      console.log("RESTAURANTS", listRestaurants.items);
-      let email = getCurrentUser().username;
-      const myRestaurant = listRestaurants.items.find(restaurant => restaurant.email == email);
-      setRestaurant(myRestaurant);
-      console.log(email, myRestaurant);
-    }).catch((error) => {
-      console.log(error);
-    });
-
-    console.log("RESTAURANT", restaurant);
+  async function getData() {
+    const email = await getCurrentUser() == null ? props.user.username : await getCurrentUser().username;
+    const restaurantsResponse = await API.graphql(graphqlOperation(queries.listRestaurants, { filter: { email: { eq: email }}}));
+    const restaurants = restaurantsResponse.data.listRestaurants.items;
+    setRestaurant(restaurants[0]);
+    console.log("REST", restaurants);
   }
 
   function logout() {
@@ -80,7 +61,7 @@ function Portal(props) {
             <Link to="/"><img className="portal-toppings-logo" src={logo} /></Link>
 
             <ul className="nav-buttons">
-              <li><Link to="/portal/dashboard"><span className={portalSelection == "dashboard" ? "portal-nav-option active" : "portal-nav-option"} onClick={() => setPortalSelection("dashboard")}><img src={dashboardIcon} /> Dashboard</span></Link></li>
+              {/*<li><Link to="/portal/dashboard"><span className={portalSelection == "dashboard" ? "portal-nav-option active" : "portal-nav-option"} onClick={() => setPortalSelection("dashboard")}><img src={dashboardIcon} /> Dashboard</span></Link></li>*/}
               <li><Link to="/portal/orders"><span className={portalSelection == "orders" ? "portal-nav-option active" : "portal-nav-option"} onClick={() => setPortalSelection("orders")}><img src={ordersIcon} /> Orders</span></Link></li>
               <li><Link to="/portal/terms-of-service"><span className={portalSelection == "terms-of-service" ? "portal-nav-option active" : "portal-nav-option"} onClick={() => setPortalSelection("terms-of-service")}><img src={termsServiceIcon} /> Terms of Service</span></Link></li>
               <li><Link to="/portal/menu"><span className={portalSelection == "menu" ? "portal-nav-option active" : "portal-nav-option"} onClick={() => setPortalSelection("menu")}><img src={menuIcon} /> Your Menu</span></Link></li>

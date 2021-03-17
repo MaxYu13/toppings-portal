@@ -58,6 +58,7 @@ function PortalSignUp(props) {
       }).then(() => {
         setSignedUp(true);
         setSuccessMsg("Account created, please enter the confirmation code.");
+        setErrorMsg("");
         setUserName(name);
       }).catch((error) => {
         setErrorMsg(error.message);
@@ -78,7 +79,7 @@ function PortalSignUp(props) {
         setSignedUp(true);
       }).catch((error) => {
         setErrorMsg(error.message);
-        if (error.message.indexOf("Current status is CONFIRMED") > -1) {
+        if (error.message.indexOf("Current status is CONFIRMED") > -1 || error.message.indexOf("Invalid JSON") > -1) {
           setConfirmed(true);
           setErrorMsg("");
           setSuccessMsg("Account confirmed, please sign in.");
@@ -87,12 +88,6 @@ function PortalSignUp(props) {
             name: name,
             email: email
           }
-
-          // API.graphql({ query: mutations.createUser, variables: { input: user } }).then(({ data: { createUser } }) => {
-          //   console.log("Create User", createUser);
-          // }).catch((error) => {
-          //   console.log(error);
-          // });
 
           const restaurant = {
             name: "Your Restaurant Name",
@@ -129,9 +124,14 @@ function PortalSignUp(props) {
     let password = passwordInput.current.value;
     
     if (email.length > 0 && password.length > 0) {
-      Auth.signIn({ username: email, password: password }).then(() => {
+      const user = { 
+        username: email, 
+        password: password 
+      };
+      Auth.signIn(user).then(() => {
         setLoggedIn(true);
-        setupSession({ username: email, password: password });
+        setupSession(user);
+        props.setUser(user);
       }).catch((error) => {
         setErrorMsg(error.message);
       });
@@ -143,7 +143,7 @@ function PortalSignUp(props) {
   return (
     <section className="portal-login-container">
       {loggedIn ? 
-        <Redirect to="/portal/dashboard" />
+        <Redirect to="/portal/orders" />
         :
         <article className="login-container">
           <div className="login-panel">
