@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/toppings-portal/static/css/main.a8bf168e.chunk.css",
-    "main.js": "/toppings-portal/static/js/main.b4fba6bb.chunk.js",
-    "main.js.map": "/toppings-portal/static/js/main.b4fba6bb.chunk.js.map",
+    "main.js": "/toppings-portal/static/js/main.fe4cbfb5.chunk.js",
+    "main.js.map": "/toppings-portal/static/js/main.fe4cbfb5.chunk.js.map",
     "runtime-main.js": "/toppings-portal/static/js/runtime-main.a52f0a1c.js",
     "runtime-main.js.map": "/toppings-portal/static/js/runtime-main.a52f0a1c.js.map",
     "static/js/2.bcdfb6f4.chunk.js": "/toppings-portal/static/js/2.bcdfb6f4.chunk.js",
@@ -36,6 +36,6 @@
     "static/js/runtime-main.a52f0a1c.js",
     "static/js/2.bcdfb6f4.chunk.js",
     "static/css/main.a8bf168e.chunk.css",
-    "static/js/main.b4fba6bb.chunk.js"
+    "static/js/main.fe4cbfb5.chunk.js"
   ]
 }
