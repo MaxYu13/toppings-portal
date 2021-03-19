@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/toppings-portal/static/css/main.a6e9cafd.chunk.css",
-    "main.js": "/toppings-portal/static/js/main.35d7fbc9.chunk.js",
-    "main.js.map": "/toppings-portal/static/js/main.35d7fbc9.chunk.js.map",
+    "main.css": "/toppings-portal/static/css/main.a8bf168e.chunk.css",
+    "main.js": "/toppings-portal/static/js/main.b4fba6bb.chunk.js",
+    "main.js.map": "/toppings-portal/static/js/main.b4fba6bb.chunk.js.map",
     "runtime-main.js": "/toppings-portal/static/js/runtime-main.a52f0a1c.js",
     "runtime-main.js.map": "/toppings-portal/static/js/runtime-main.a52f0a1c.js.map",
-    "static/js/2.b9bc18bc.chunk.js": "/toppings-portal/static/js/2.b9bc18bc.chunk.js",
-    "static/js/2.b9bc18bc.chunk.js.map": "/toppings-portal/static/js/2.b9bc18bc.chunk.js.map",
+    "static/js/2.bcdfb6f4.chunk.js": "/toppings-portal/static/js/2.bcdfb6f4.chunk.js",
+    "static/js/2.bcdfb6f4.chunk.js.map": "/toppings-portal/static/js/2.bcdfb6f4.chunk.js.map",
     "index.html": "/toppings-portal/index.html",
-    "static/css/main.a6e9cafd.chunk.css.map": "/toppings-portal/static/css/main.a6e9cafd.chunk.css.map",
-    "static/js/2.b9bc18bc.chunk.js.LICENSE.txt": "/toppings-portal/static/js/2.b9bc18bc.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/toppings-portal/static/media/toppings-print-white-gradient-transparent.d5b9d08c.PNG",
+    "static/css/main.a8bf168e.chunk.css.map": "/toppings-portal/static/css/main.a8bf168e.chunk.css.map",
+    "static/js/2.bcdfb6f4.chunk.js.LICENSE.txt": "/toppings-portal/static/js/2.bcdfb6f4.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/toppings-portal/static/media/FatFrank-Regular.532265e9.otf",
     "static/media/bubble-icon-1.59b54bba.svg": "/toppings-portal/static/media/bubble-icon-1.59b54bba.svg",
     "static/media/bubble-icon-2.7af7e509.svg": "/toppings-portal/static/media/bubble-icon-2.7af7e509.svg",
     "static/media/clock-icon.d3af5bbb.svg": "/toppings-portal/static/media/clock-icon.d3af5bbb.svg",
@@ -23,17 +23,19 @@
     "static/media/portal-logout-icon.401bf9b0.svg": "/toppings-portal/static/media/portal-logout-icon.401bf9b0.svg",
     "static/media/portal-menu-icon.9ea934fe.svg": "/toppings-portal/static/media/portal-menu-icon.9ea934fe.svg",
     "static/media/portal-menu-plus-button.c31ac20a.svg": "/toppings-portal/static/media/portal-menu-plus-button.c31ac20a.svg",
+    "static/media/portal-menu-x-button.175a158d.svg": "/toppings-portal/static/media/portal-menu-x-button.175a158d.svg",
     "static/media/portal-orders-icon.337bc697.svg": "/toppings-portal/static/media/portal-orders-icon.337bc697.svg",
     "static/media/portal-rewards-icon.6fe63e0d.svg": "/toppings-portal/static/media/portal-rewards-icon.6fe63e0d.svg",
     "static/media/portal-settings-icon.ee0f252a.svg": "/toppings-portal/static/media/portal-settings-icon.ee0f252a.svg",
     "static/media/portal-terms-service-icon.d30cdcaa.svg": "/toppings-portal/static/media/portal-terms-service-icon.d30cdcaa.svg",
     "static/media/settings-design.972557d8.PNG": "/toppings-portal/static/media/settings-design.972557d8.PNG",
+    "static/media/Portal.css": "/toppings-portal/static/media/toppings-print-white-gradient-transparent.d5b9d08c.PNG",
     "static/media/white-checkmark.fe085373.svg": "/toppings-portal/static/media/white-checkmark.fe085373.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a52f0a1c.js",
-    "static/js/2.b9bc18bc.chunk.js",
-    "static/css/main.a6e9cafd.chunk.css",
-    "static/js/main.35d7fbc9.chunk.js"
+    "static/js/2.bcdfb6f4.chunk.js",
+    "static/css/main.a8bf168e.chunk.css",
+    "static/js/main.b4fba6bb.chunk.js"
   ]
 }

@@ -56,6 +56,7 @@ function PortalOrders(props) {
       const myOrder = eventData.value.data.onUpdateOrder;
       if (myOrder.restaurant.id == props.restaurant.id && myOrder.isPaid) {
         let foodItems = [];
+        console.log(myOrder)
         myOrder.orderItems.items.forEach(foodItem => {
           foodItems.push({ name: foodItem.itemName, price: foodItem.price_before_reward });
         });
@@ -81,7 +82,7 @@ function PortalOrders(props) {
   async function getData() {
     const response = await API.graphql(graphqlOperation(queries.listOrders));
     const orders = response.data.listOrders.items.filter(order => order.restaurant != null && order.restaurant.id == props.restaurant.id && order.orderItems.items.length > 0);
-          
+    console.log(orders)
     let New = []
     orders.forEach(order => {
       let foodItems = [];
@@ -172,24 +173,24 @@ function PortalOrders(props) {
                     {selectedOrder.items.map((item => 
                       <div key={Math.random()} className="order-item">
                         <span className="order-item-name">{item.name}</span>
-                        <span className="order-item-price">{item.price}</span>
+                        {/* <span className="order-item-price">{item.price}</span> */}
                       </div>
                     ))}
                     <br />
-                    <div className="order-tax-tip">
+                    {/* <div className="order-tax-tip">
                       <span className="order-item-name">Tax</span>
                       <span className="order-item-price">${(Math.round(15 * selectedOrder.items.reduce((a, b) => a + (b.price || 0), 0)) * 0.01).toFixed(2)}</span>
                     </div>
 
                     <div className="order-tax-tip">
                       <span className="order-item-name">Tip</span>
-                       <span className="order-item-price">${selectedOrder.tip}</span> {/*add back in to fixed */}
+                       <span className="order-item-price">${selectedOrder.tip}</span> {/*add back in to fixed 
                     </div>
                     <br />
                     <div className="order-total">
                       <span className="order-item-name">Total</span>
                       <span className="order-item-price">${(selectedOrder.tip + (Math.round(15 * selectedOrder.items.reduce((a, b) => a + (b.price || 0), 0)) * 0.01) + selectedOrder.items.reduce((a, b) => a + (b.price || 0), 0)).toFixed(2)}</span>
-                    </div>
+                    </div> */}
                     <br />
 
                     <hr />
